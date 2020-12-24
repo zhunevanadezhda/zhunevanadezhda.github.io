@@ -67,14 +67,6 @@
 					});
 					mymap.addLayer(Water);
 
-					var Roads= L.tileLayer.wms("http://geoserver-mygeoserver.b9ad.pro-us-east-1.openshiftapps.com/geoserver/ows", {
-								layers: 'web_gis:Roads',
-								styles: 'web_gis:Roads',
-								format: 'image/png',
-								transparent: true
-						});
-						mymap.addLayer(Roads);
-
 					var Railwayline= L.tileLayer.wms("http://geoserver-zhuneva-gserver.e4ff.pro-eu-west-1.openshiftapps.com/geoserver/ows", {
 								layers: 'zhuneva_gserver:railwayline_Clip',
 								styles: 'zhuneva_gserver:railwayline',
@@ -82,7 +74,6 @@
 								transparent: true
 						});
 						mymap.addLayer(Railwayline);
-
 
 	var popup = L.popup();
 
